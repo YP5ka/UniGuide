@@ -2,7 +2,7 @@ import React from "react";
 import Modal from './modal/modal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, A11y, Scrollbar } from 'swiper/modules';
 
 function Slider2(){
     const [modalActive, setModalActive] = React.useState(true);
@@ -12,7 +12,7 @@ function Slider2(){
     const arr = [
       {img: "/img/fourPage/ladder.jpg", title: "Каменная лестница",
       text: "Объект был построен в начале 19-го века, а в 1855 году, во время Крымкой войны, именно на Каменной лестнице произошло одно из самых ярких сражений: отряд английских солдат пытался поднятьсявверх по ступеням и попасть в город, а донские казаки сверху открыли  огонь и смогли остановить неприятеля. Сегодня лестница является одним из символов Таганрога. Ее озеленили по обеим сторонам, установили красивые скульптуры. Ежегодно в день Города по ступеням проводится массовый забег. Победитель получает памятные подарки."},
-      {img: "/img/fourPage/naberejnay.jpg", title: "Пушкинская набережная",
+      {img: "/img/fourPage/seaBereg.jpg", title: "Пушкинская набережная",
       text: "Старейшая набережная города никогда не бывает безлюдной: здесь гуляют отдыхающие, совершают променад семьи с детьми, неторопливо прогуливаются пенсионеры. Главное украшение набережной – памятник, установленный в честь 300-летнего юбилея Таганрога. От него лучами расходятся пешеходные дорожки в разные стороны, образуя сквер. Длина набережной составляет более километра, на всей протяженности она украшена клумбами, зелеными насаждениями, аккуратными живыми изгородями. Для гостей всегда открыты двери небольших ресторанов и уютных кафе.",},
       {img: "/img/fourPage/domikCheh.jpg" ,title: "Музей «Домик Чехова»",
       text: "В маленьком флигеле из глинобитного кирпича в 1860 году родился будущий известный писатель Антон Чехов. В начале 20-го века дом опустел. Музей создавался руками энтузиастов: два таганрогских учителя постепенно собирали экспонаты, личные вещи Чехова, его школьные тетради, фотографии, восстанавливали обстановку. Первая выставка состоялась в 1926 году. Сегодня посетители могут увидеть, как жил А.П. Чехов, пока был маленьким. Экспозиция рассказывает о быте семьи, ее традициях и привычках. Документы, записи, предметы мебели – все сохранилось в том же виде, что и полтора века назад.",},
@@ -36,14 +36,14 @@ function Slider2(){
             '--swiper-pagination-color': '#fff',
             '--swiper-pagination-top': 83,
           }}
-        modules={[Navigation,  A11y]}
-        spaceBetween={50}
-        slidesPerView={5}
-        navigation
-        pagination={{ clickable: false }}
-        scrollbar={{ draggable: false }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+          modules={[Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={5}
+         
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
     >
             {arr.map((item, index) => (
               <SwiperSlide key={index}>

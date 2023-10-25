@@ -21,12 +21,7 @@ const FourPage = () => {
                     </div>
                     
                 </div>
-                <div className="bannerMainFourSecond">
-                    <div className="trueInfo">
-                        <h1>Достоверная информация<img className="icon" src = "/img/fourPage/icon.svg" alt = "icon"/></h1>
-                        <p>Карточки, помеченные данной иконкой, подтверждены сертифицированным гидом <span>Ивановым Иваном.</span></p>
-                    </div>
-                </div>
+                
                     <div className="gallery">
                         
                         <div className="card">
@@ -39,9 +34,6 @@ const FourPage = () => {
                         
                             <h1>Где отдохнуть?</h1>
                                 <Slider4></Slider4>
-                        
-                            <h1>Гастротуризм</h1>
-                                <Slider5></Slider5>
                                 
                         </div>
                     </div>

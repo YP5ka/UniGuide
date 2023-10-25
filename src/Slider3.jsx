@@ -2,7 +2,7 @@ import React from "react";
 import Modal from './modal/modal';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/bundle';
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Pagination, A11y, Scrollbar } from 'swiper/modules';
 
 function Slider3(){
     const [modalActive, setModalActive] = React.useState(true);
@@ -34,14 +34,14 @@ function Slider3(){
             '--swiper-pagination-color': '#fff',
             '--swiper-pagination-top': 83,
           }}
-        modules={[Navigation,  A11y]}
-        spaceBetween={50}
-        slidesPerView={5}
-        navigation
-        pagination={{ clickable: false }}
-        scrollbar={{ draggable: false }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+          modules={[Pagination, Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={5}
+         
+          pagination={{ clickable: true }}
+          scrollbar={{ draggable: true }}
+          onSwiper={(swiper) => console.log(swiper)}
+          onSlideChange={() => console.log('slide change')}
     >
             {arr.map((item, index) => (
               <SwiperSlide key={index}>
