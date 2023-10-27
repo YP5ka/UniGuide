@@ -14,15 +14,15 @@ function Slider () {
     const arr = [
       {img: "/img/fourPage/petr.jpg", title: "Каменная лестница",
       text: "Объект был построен в начале 19-го века, а в 1855 году, во время Крымкой войны, именно на Каменной лестнице произошло одно из самых ярких сражений: отряд английских солдат пытался поднятьсявверх по ступеням и попасть в город, а донские казаки сверху открыли  огонь и смогли остановить неприятеля. Сегодня лестница является одним из символов Таганрога. Ее озеленили по обеим сторонам, установили красивые скульптуры. Ежегодно в день Города по ступеням проводится массовый забег. Победитель получает памятные подарки."},
-      {img: "/img/fourPage/card2.png", title: "Пушкинская набережная",
+      {img: "/img/fourPage/card.png", title: "Пушкинская набережная",
       text: "cat",},
-      {img: "/img/fourPage/card3.png" ,title: "Three",
+      {img: "/img/fourPage/card.png" ,title: "Three",
       text: "fox",},
-      {img: "/img/fourPage/card4.png", title: "Four",
+      {img: "/img/fourPage/card.png", title: "Four",
       text: "plssssss",},
-      {img: "/img/fourPage/card5.png"},
-      {img: "/img/fourPage/card6.png"},
-      {img: "/img/fourPage/card7.png"},]
+      {img: "/img/fourPage/card.png"},
+      {img: "/img/fourPage/card.png"},
+      {img: "/img/fourPage/card.png"},]
 
       const openModal = (image, title, text) => {
         setSelectedImage(image);
